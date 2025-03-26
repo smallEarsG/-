@@ -290,7 +290,7 @@ function downloadImage() {
   content: "";
   position: absolute;
   top: 10px;
-  right: -6px;
+  right: -5px;
   width: 0;
   height: 0;
   border-top: 6px solid transparent;
@@ -302,7 +302,7 @@ function downloadImage() {
   content: "";
   position: absolute;
   top: 10px;
-  left: -6px;
+  left: -5px;
   width: 0;
   height: 0;
   border-top: 6px solid transparent;
