@@ -1,9 +1,9 @@
 <template>
     <div class="wx-input-bar">
-      <div class="icon left"><el-icon><Microphone /></el-icon></div>
+      <div class="icon left"><img src="../assets/voice.png" alt=""></div>
       <input class="input" type="text" placeholder="" />
-      <div class="icon right"><el-icon><Emoji /></el-icon></div>
-      <div class="icon right"><el-icon><CirclePlus /></el-icon></div>
+      <div class="icon right"><img src="../assets/smiling.png" alt=""></div>
+      <div class="icon right circle "><img src="../assets/circlePlus.png"/></div>
     </div>
   </template>
   
@@ -18,6 +18,8 @@
     background-color: #f8f8f8;
     padding: 6px 8px;
     border-top: 1px solid #ddd;
+    width: 100%;
+    box-sizing: border-box;
   }
   
   .input {
@@ -35,11 +37,20 @@
   .icon {
     width: 36px;
     height: 36px;
-    border-radius: 50%;
-    border: 1px solid #ccc;
+    /* border-radius: 50%; */
+    /* border: 1px solid #ccc; */
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+  }
+  .icon img {
+    width: 100%;
+    /* height: 100%; */
+    object-fit: cover; 
+  }
+  .circle{
+    object-fit: cover; 
   }
   
   .icon.right {
